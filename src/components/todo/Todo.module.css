@@ -1,0 +1,39 @@
+.todo {
+  display: flex;
+  align-items: center;
+  margin: 0.7rem;
+}
+.checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.text {
+  flex: 1;
+  margin-left: 1rem;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--color-grey);
+  transition: all 0.3s ease-in-out;
+}
+.icon .button {
+  color: var(--color-text);
+}
+.button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.icon:hover {
+  background-color: var(--color-orange);
+  transform: rotate(-15deg);
+}
+.icon:hover > .button {
+  color: var(--color-white);
+}
